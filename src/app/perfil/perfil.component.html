@@ -1,0 +1,105 @@
+<div class="container-fluid bg-connect tela" id="tela">
+
+  <div class="container">
+
+    <div class="row mb-5"><div></div></div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card border-roxoclaro mb-3">
+          <div class="d-flex">
+            <div class="col-md-10 mx-auto text-center">
+              <img src="{{foto}}" class=" card-img-top rounded-circle  my-3" alt="Foto de perfil"
+                style="width: 100px; height: 100px;">
+              <h4>{{nome}}</h4>
+            </div>
+
+          </div>
+
+          <div class="d-flex flex-column p-1 mt-2">
+            <div class="ms-1">
+
+              <div class="d-flex align-items-center rounded p-2 border-b-p">
+                <a class="text-secondary" routerLink='/feed'><i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>Feed</a>
+              </div>
+
+              <div class="d-flex align-items-center rounded p-2  mt-1">
+                <a class="text-secondary" [routerLink]="['/perfil-user', idUsuario]"><i class="fa fa-user mr-2 iperfil"></i>Perfil</a>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-9 d-flex flex-column">
+
+        <h1 class="text-center ft-title1">Meu perfil</h1>
+
+        <div class="container-fluid d-flex align-items-center justify-content-center" id="container-central">
+
+          <div class="col-md-12 p-3">
+
+            <div class="form-group text-center texto">
+              <div class="d-flex justify-content-between">
+                <!-- <label for="nome">Usuário</label> -->
+                <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="nome" id="nome"
+                  placeholder="Digite seu Nome e Sobrenome">
+              </div>
+              <!-- <label for="usuario">Email</label> -->
+              <div class="form-group text-center texto">
+                <input [(ngModel)]="usuario.usuario" class="form-control mt-2" type="email" name="email" id="email"
+                  placeholder="Digite seu email">
+              </div>
+              <!-- <label for="senha">Senha</label> -->
+              <div for="senha" id="alterarSenha">
+                <div class="form-group text-center texto">
+                  <input (input)="confirmPassword($event)" class="form-control mt-2" type="password" name="senha"
+                    id="senha" placeholder="Digite a senha (Minimo 9 caracteres)">
+                </div>
+                <!-- <label for="senha">Confirmar Senha</label> -->
+                <div for="confirmPassword" class="form-group text-center texto">
+                  <input [(ngModel)]="usuario.senha" class="form-control mt-2 bg-in " type="password"
+                    name="confirmSenha" id="confirmSenha" placeholder="Confirme a nova senha digitada">
+                </div>
+              </div>
+              <!-- <label for="senha">Data Nascimento</label> -->
+              <div class="form-group text-center texto">
+                <input [(ngModel)]="usuario.dataNascimento" class="form-control mt-2 bg-in" type="date"
+                  name="dataNascimento" id="dataNascimento">
+              </div>
+
+              <!-- <label for="usuario">Usuário</label>-->
+              <div class="form-group text-center texto">
+                <input [(ngModel)]="usuario.foto" class="form-control bg-in mt-2" type="text" name="linkFoto"
+                  id="linkFoto" placeholder="Link foto de perfil (não é obrigatório)">
+              </div>
+
+
+              <div class="mb-4">
+                <label for="tipo">Tipo de usuário</label>
+                <select  class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)' placeholder='Selecione o tipo de usuario'>
+                  <option disabled selected>Selecione o tipo de usuario</option>
+                  <!-- <option value="administrador">Administrador</option> -->
+                  <option value="colaborador">Colaborador</option>
+                  <option value="favorecido">Beneficiado</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-center mt-3">
+                <button (click)='atualizar()' type="submit" class="btn bg-primary w-50 text-white">Atualizar</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row mb-5"><div></div></div>
+</div>

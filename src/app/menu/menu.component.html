@@ -1,0 +1,56 @@
+<nav *ngIf='!logado()' class="navbar navbar-expand-lg navbar-dark nav-bar sticky-top">
+    <div class="container-fluid">
+        <a class="font-weight-bold text-white fs-20" routerLink='/inicio'>RECONECT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="#quemSomos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="#comoFazemos">Como fazemos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="#cursos">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="#equipe">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" routerLink='/contato'>Contato</a>
+                </li>
+                <li class="nav-item text-white mr-2 mt-2">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" routerLink='/login'>Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-cad fade" routerLink='/cadastro'>Cadastrar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav *ngIf='logado()' class="navbar navbar-expand-lg navbar-light nav-bar sticky-top">
+    <div class="container-fluid">
+        <a class="font-weight-bold text-white fs-20">RECONECT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a (click)='sair()' class="text-white fs-16 mr-2" routerLink='/inicio'>Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

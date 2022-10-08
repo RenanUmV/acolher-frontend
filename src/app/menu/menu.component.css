@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+.nav-bar {
+    background-color: #061c39;
+}
+
+.nav-bar a {
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.btn-cad{
+    font-family: 'Poppins', serif;
+    border-radius: 20px;
+    background-color: #0072b1;
+}
+
+.fs-20 {
+    font-size: 20pt;
+}
+
+.fade{
+    opacity:0.9;
+}
+
+.fade:hover
+{
+    opacity:1;
+}
