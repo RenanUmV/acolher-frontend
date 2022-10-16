@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
+@font-face {
+    font-family: "Rawles";
+    src: local("Rawles"), url(../../assets/fonts/Rawles.ttf) format("truetype");
+}
 
 .nav-bar {
     background-color: #061c39;
@@ -13,7 +17,7 @@
     color: #fff;
 }
 
-.btn-cad{
+.btn-cad {
     font-family: 'Poppins', serif;
     border-radius: 20px;
     background-color: #0072b1;
@@ -23,11 +27,37 @@
     font-size: 20pt;
 }
 
-.fade{
-    opacity:0.9;
+.fade {
+    opacity: 0.9;
 }
 
-.fade:hover
-{
-    opacity:1;
+.fade:hover {
+    opacity: 1;
+}
+
+#barcolor {
+    z-index: 15000;
+    background: rgb(124, 157, 212);
+    background: linear-gradient(90deg, rgba(124, 157, 212, 0.9476832969515931) 1%, rgba(50, 102, 190, 0.9756945014333859) 17%, rgba(198, 100, 143, 1) 52%, rgba(222, 19, 41, 0.9140698515734419) 83%);
+}
+
+#id-logo {
+    font-family: 'Rawles';
+    font-size: 30px;
+    position: relative;
+}
+
+#spanmini {
+    position: absolute;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    #spanmini {
+        font-size: 12px;
+    }
+}
+
+.input-group{
+    width: 358px;
 }

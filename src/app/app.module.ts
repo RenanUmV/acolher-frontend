@@ -23,6 +23,7 @@ import { PerfilUserComponent } from './perfil-user/perfil-user.component';
 import { OrderModule } from 'ngx-order-pipe';
 import { AlertasComponent } from './alertas/alertas.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    IvyCarouselModule,
     ModalModule.forRoot(),
     OrderModule
   ],

@@ -1,102 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-body{
-    font-family:  'Poppins', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #000;
 }
 
-h1{
+h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     color: #000;
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
     color: #000;
     font-weight: bold;
 }
 
-h3{
+h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     color: #000;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
-.tela{
+.tela {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-.img-topo{
+.img-topo {
     width: 350px;
     height: 350px;
     object-fit: contain;
 }
 
-.grow:hover
-{
+.grow:hover {
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
 }
 
-.card{
+.card {
     border-radius: 10px;
 }
 
-.bg-jb{
+.bg-jb {
     background-color: #d6f3f9;
 }
 
-.bg-cc{
+.bg-cc {
     background-color: #ecfbff;
 }
 
-.bg-equipe{
+.bg-equipe {
     background-color: #ecfbff;
 }
 
-.btn-cc{
+.btn-cc {
     background-color: #0072b1;
     color: #fff;
 }
 
-.img-cf{
+.img-cf {
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.card-team{
+.card-team {
     width: 200px;
     min-height: 150px;
 }
 
-#team img{
+#team img {
     margin-top: -50px;
 }
 
-#team i{
+#team i {
     font-size: 26px;
-    color: #555;    
+    color: #555;
 }
 
-#team p{
-    font-weight: 500;    
+#team p {
+    font-weight: 500;
 }
 
-#team .card{
-    border-radius: 5;    
+#team .card {
+    border-radius: 5;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -104,65 +103,103 @@ h3{
     margin-top: 100px;
 }
 
-#team .card:hover{    
+#team .card:hover {
     color: #fff;
     border-radius: 5px;
     border: none;
-    box-shadow: 5px 5px 10px #9E9E9E;    
+    box-shadow: 5px 5px 10px #9E9E9E;
 }
 
-#team .card:hover h3, #team .card:hover i{
-    color: #fff;    
+#team .card:hover h3,
+#team .card:hover i {
+    color: #fff;
 }
 
 ul.social-network {
     list-style: none;
-    padding:0;
+    padding: 0;
 }
 
 ul.social-network li {
-    display:inline;
+    display: inline;
     margin: 0;
     padding: 5px;
 }
 
-.fa{
+.fa {
     font-size: 35pt;
     color: white;
-    padding: 10px;    
+    padding: 10px;
 }
 
-#team .cardAl{
-        box-shadow: 5px 5px 15px #0072b1;
-}
-#team .cardAl:hover{
-    background: #0072b1;    
-}
-
-#team .cardBru{
-    box-shadow: 5px 5px 15px #C44140;
-}
-#team .cardBru:hover{
-background: #C44140;    
-}
-
-#team .cardMat{
-    box-shadow: 5px 5px 15px #FFB609;
-}
-#team .cardMat:hover{
-background: #FFB609;    
-}
-
-#team .cardRen{
-    box-shadow: 5px 5px 15px #00AF49;
-}
-#team .cardRen:hover{
-background: #00AF49;    
-}
-
-#team .cardSyl{
+#team .cardAl {
     box-shadow: 5px 5px 15px #0072b1;
 }
-#team .cardSyl:hover{
-background: #0072b1;    
+
+#team .cardAl:hover {
+    background: #0072b1;
+}
+
+#team .cardBru {
+    box-shadow: 5px 5px 15px #C44140;
+}
+
+#team .cardBru:hover {
+    background: #C44140;
+}
+
+#team .cardMat {
+    box-shadow: 5px 5px 15px #FFB609;
+}
+
+#team .cardMat:hover {
+    background: #FFB609;
+}
+
+#team .cardRen {
+    box-shadow: 5px 5px 15px #00AF49;
+}
+
+#team .cardRen:hover {
+    background: #00AF49;
+}
+
+#team .cardSyl {
+    box-shadow: 5px 5px 15px #0072b1;
+}
+
+#team .cardSyl:hover {
+    background: #0072b1;
+}
+
+/*  */
+
+#main-container {
+    background-color: #b06a73;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    #main-container {
+        width: 383px;
+    }
+}
+
+#img-main {
+    position: relative;
+    margin-top: -133px;
+    margin-left: -126px;
+    width: 405px;
+}
+
+@media screen and (max-width: 1200px) {
+    #img-main {
+        position: relative;
+        margin-left: 0px;
+        margin-top: -34px;
+    }
+}
+
+#bttn-register{
+    border-radius: 24px;
 }
