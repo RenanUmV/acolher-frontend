@@ -3,15 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
 #img-bg{
-    background-image: url("https://i.imgur.com/FwVAvD6.png");
+    /* background-image: url("https://i.imgur.com/FwVAvD6.png"); */
+    /* background-image: url("https://i.imgur.com/LxRe2qk.png"); */
+    background-image: url("https://i.imgur.com/Rhd7wxb.png");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    opacity: 0.6;
 }
 
 span{
     color: #0072b1;
+}
+
+.asterisco{
+    color: red;
+}
+
+hr{
+    background-color: rgb(255, 79, 99);
+    fill: rgb(255, 79, 99);
 }
 
 .btn{
@@ -23,10 +35,39 @@ span{
     min-width: 10rem;
     margin-right: 3rem;
     margin-top: 1.750rem;
+    background-color: rgb(255, 79, 99);
+    color: aliceblue;
+    width: 300px;
 }
 
 .font-t {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     color: #0a0a0a;
+}
+
+.test{
+    align-items: center;
+    justify-content: center;
+    color: #0072b1;
+}
+
+.form-control{
+    color: aliceblue;
+    border-color: #0a0a0a;
+    background-color: rgb(255, 79, 99);
+}
+
+input::placeholder{
+    color: aliceblue;
+}
+
+input[type=radio]{
+    width: 20px;
+    height: 20px;
+}
+
+input[type=radio]:checked{
+    width: 20px;
+    height: 20px;
 }

@@ -2,27 +2,169 @@
 
     <div class="row d-flex justify-content-center">
 
-        <div class="col-md-6" id="img-bg">
+        <div class="col-md-5" id="img-bg">
 
         </div>
 
-        <div class="col-md-6 mt-5 mb-5 d-flex justify-content-center align-items-center">
+        <div class="col-md-7 mt-0 mb-5 d-flex justify-content-center align-items-center">
 
                 <div class="col-md-10">
 
-                    <h1 class="text-center font-t mb-5">Faça seu <span>cadastro</span></h1>
-
-                    <div class="form-group mb-3">
-                        <label for="nome">Nome</label>
-                        <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    <div class="row mt-1">
+                        <div class="col"></div>
+                        <div class="col">
+                            <h1 class="text-center font-t"><span>SEJA UM ACOLHIDO</span></h1>
+                        </div>
+                        <div class="col"></div>
                     </div>
 
-                    <div class="form-group mb-3">
-                        <label for="email">E-mail</label>
-                        <input [(ngModel)]='usuario.usuario' class="form-control" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    <p class="text-center">ACOLHA VIDAS, TRANSFORME PESSOAS</p>
+                    
+                    <hr>
+
+                    <div class="row d-flex justify-content-center">
+
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label for="nome">Nome completo da organização<span class="asterisco"> *</span></label>
+                                <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="telefone">Telefone <span class="asterisco"> *</span></label>
+                                <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu telefone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input (input) = 'confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua senha (Mínimo 9 caracteres)">
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="tempo">Fundado há mais de 2 anos?<span class="asterisco"> *</span></label>
+                                <div>
+                                    <input type="radio" id="sim" name="opt1" value="1">
+                                    <label class="mr-5 ml-2" for="sim">Sim</label>
+                                    <label class="ml-5 mr-2" for="nao">Não</label>  
+                                    <input type="radio" id="nao" name="opt1" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="causa">Qual a causa da sua ONG?<span class="asterisco"> *</span></label>
+                                <div>
+                                    <div class="row ml-4">
+                                        <input type="radio" id="saude" name="opt2" value="1">
+                                        <label class="ml-2" for="saude">Saúde</label>
+                                    </div>
+    
+                                    <div class="row ml-4">
+                                        <input type="radio" id="educacao" name="opt2" value="2">
+                                        <label class="ml-2" for="educacao">Educação</label>
+                                    </div>
+    
+                                    <div class="row ml-4">
+                                        <input type="radio" id="cidadania" name="opt2" value="3">
+                                        <label class="ml-2" for="cidadania">Cidadania</label>
+                                    </div>
+    
+                                    <div class="row ml-4">
+                                        <input type="radio" id="cultura" name="opt2" value="4">
+                                        <label class="ml-2" for="cultura">Cultura e esportes</label>
+                                    </div>
+    
+                                    <div class="row ml-4">
+                                        <input type="radio" id="genediv" name="opt2" value="5">
+                                        <label class="ml-2" for="genediv">Gênero e diversidade</label>
+                                    </div>
+    
+                                    <div class="row ml-4">
+                                        <input type="radio" id="ambiente" name="opt2" value="6">
+                                        <label class="ml-2" for="ambiente">Meio Ambiente</label>
+                                    </div>
+    
+                                    <div class="row ml-4">
+                                        <input type="radio" id="protanim" name="opt2" value="7">
+                                        <label class="ml-2" for="protanim">Proteção Animal</label>
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="form-group mb-3">
+                                <label for="email">E-mail<span class="asterisco"> *</span></label>
+                                <input [(ngModel)]='usuario.usuario' class="form-control" type="email" name="email" id="email" placeholder="Digite o e-mail da ONG">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="nome">Estado<span class="asterisco"> *</span></label>
+                                <select class="form-control" name="estado" id="estado">
+                                    <option value="acre">ACRE</option>
+                                    <option value="alagoas">ALAGOAS</option>
+                                    <option value="amapa">AMAPÁ</option>
+                                    <option value="amazonas">AMAZONAS</option>
+                                    <option value="bahia">BAHIA</option>
+                                    <option value="ceara">CEARÁ</option>
+                                    <option value="espirito santo">ESPÍRITO SANTO</option>
+                                    <option value="goias">GOÍAS</option>
+                                    <option value="maranhao">MARANHÃO</option>
+                                    <option value="mato grosso">MATO GROSSO</option>
+                                    <option value="mato grosso do sul">MATO GROSSO DO SUL</option>
+                                    <option value="minas gerais">MINAS GERAIS</option>
+                                    <option value="para">PARÁ</option>
+                                    <option value="paraiba">PARAÍBA</option>
+                                    <option value="parana">PARANÁ</option>
+                                    <option value="pernambuco" selected>PERNAMBUCO</option>
+                                    <option value="piaui">PIAUÍ</option>
+                                    <option value="rio de janeiro">RIO DE JANEIRO</option>
+                                    <option value="rio grande do norte">RIO GRANDE DO NORTE</option>
+                                    <option value="rio grande do sul">RIO GRANDE DO SUL</option>
+                                    <option value="rondonia">RONDÔNIA</option>
+                                    <option value="roraima">RORAIMA</option>
+                                    <option value="santa catarina">SANTA CATARINA</option>
+                                    <option value="sao paulo">SÃO PAULO</option>
+                                    <option value="sergipe">SERGIPE</option>
+                                    <option value="tocantnis">TOCANTINS</option>
+                                    <option value="distrito federal">DISTRITO FEDERAL</option>
+                                </select>
+                            </div>
+
+                            <div class="rform-group">
+                                <label for="confirmar-senha">Confirmar senha</label>
+                                <input [(ngModel)]='usuario.senha' class="form-control" type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="apoioPolitico">Faz parte ou tem ligação com algum partido político?<span class="asterisco"> *</span></label>
+                                <div>
+                                    <input type="radio" id="sim2" name="opt3" value="1">
+                                    <label class="mr-5 ml-2" for="sim2">Sim</label>
+                                    <label class="ml-5 mr-2" for="nao2">Não</label>  
+                                    <input type="radio" id="nao2" name="opt3" value="0">
+                                </div>
+                            </div>
+
+                            <div  class="form-group mb-4">
+                                <label for="certPrem">A ONG possui alguma certificação ou prêmios?<span class="asterisco"> *</span></label>
+                                    <label class="mr-5 ml-2" for="sim3"><input class="test" type="radio" id="sim3" name="opt4" value="1"> Sim</label>
+                                    <label class="ml-5 mr-2" for="nao3">Não <input class="test" type="radio" id="nao3" name="opt4" value="0"></label>
+                            </div>
+
+                            <button class="btn botao btn-lg botao mt-5" type="submit" (click)='cadastrar()'>Cadastrar</button>
+
+                        </div>
+    
+                            
                     </div>
 
-                    <div class="form-group mb-3">
+
+                    
+                
+                    
+
+                    <!-- <div class="form-group mb-3">
                         <label for="foto">Link da foto</label>
                         <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Insira o link da foto que deseja utilizar">
                     </div>
@@ -46,7 +188,7 @@
                         <label for="tipo">Tipo de usuário</label>
                         <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                             <option>Selecione um tipo de usuário:</option>
-                            <!-- <option value="administrador">Administrador</option> -->
+                            option value="administrador">Administrador</option>
                             <option value="colaborador">Colaborador</option>
                             <option value="favorecido">Beneficiado</option>
                         </select>
@@ -64,7 +206,7 @@
                     </div>
                     <div class="row mb-3">
                         <div></div>
-                    </div>
+                    </div> -->
 
                 </div>
 
