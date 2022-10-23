@@ -16,3 +16,20 @@
     text-transform: uppercase;
     font-weight: bolder;
 }
+
+#container-float{
+    background-color: #b06a73;
+    border-radius: 20px;
+    height: 465px;
+}
+#container-float-bl{
+    background-color: #5054cab9;
+    border-radius: 20px;
+    height: 465px;
+}
+#id-logo {
+    font-family: 'Rawles';
+    font-size: 30px;
+    position: relative;
+    color: white !important;
+}
