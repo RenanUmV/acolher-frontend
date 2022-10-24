@@ -24,6 +24,7 @@ import { OrderModule } from 'ngx-order-pipe';
 import { AlertasComponent } from './alertas/alertas.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { CadastroAcolhedorComponent } from './cadastro-acolhedor/cadastro-acolhedor.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     RodapeComponent,
     LoginComponent,
     CadastroComponent,
+    CadastroAcolhedorComponent,
     InicioComponent,
     FeedComponent,
     TemaComponent,
@@ -43,7 +45,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     ContatoComponent,
     PerfilComponent,
     PerfilUserComponent,
-    AlertasComponent
+    AlertasComponent,
+    CadastroAcolhedorComponent
   ],
   imports: [
     BrowserModule,

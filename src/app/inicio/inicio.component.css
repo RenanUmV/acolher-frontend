@@ -203,3 +203,8 @@ ul.social-network li {
 #bttn-register{
     border-radius: 24px;
 }
+
+.test{
+    border-color: #000;
+    border-radius: 50px;
+}
