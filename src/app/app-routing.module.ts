@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastroAcolhedorComponent } from './cadastro-acolhedor/cadastro-acolhedor.component';
+import { CadastroAcolhedorComponent} from './cadastro-acolhedor/cadastro-acolhedor.component';
+import { CadastroAcolhidoComponent } from './cadastro-acolhido/cadastro-acolhido.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ContatoComponent } from './contato/contato.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
@@ -16,10 +17,13 @@ import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'inicio', pathMatch:'full'},
+
+  {path:'cadastro-acolhedor',component: CadastroAcolhedorComponent},
+  
+  {path:'cadastro-acolhido',component: CadastroAcolhidoComponent},
   
   {path:'login', component: LoginComponent},
   {path:'cadastro', component: CadastroComponent},
-  {path:'cadastro-acolhedor', component: CadastroAcolhedorComponent},
   {path:'contato', component: ContatoComponent},
 
   {path:'inicio', component: InicioComponent},
