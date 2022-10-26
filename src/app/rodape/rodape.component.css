@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 .bg-f {
-    background-color: #061c39 
+    background-color: white
 }
 
 .fa {
@@ -18,7 +18,7 @@
 }
 
 #container-float{
-    background-color: #b06a73;
+    background-color: rgb(255, 79, 99);;
     border-radius: 20px;
     height: 465px;
 }
