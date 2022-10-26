@@ -33,11 +33,11 @@
     
                             <div class="form-group">
                                 <label for="telefone">Telefone <span class="asterisco"> *</span></label>
-                                <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu telefone">
+                                <input class="form-control" type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
                             </div>
 
                             <div class="form-group">
-                                <label for="senha">Senha</label>
+                                <label for="senha">Senha<span class="asterisco"> *</span></label>
                                 <input (input) = 'confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua senha (Mínimo 9 caracteres)">
                             </div>
     
@@ -132,7 +132,7 @@
                             </div>
 
                             <div class="rform-group">
-                                <label for="confirmar-senha">Confirmar senha</label>
+                                <label for="confirmar-senha">Confirmar senha<span class="asterisco"> *</span></label>
                                 <input [(ngModel)]='usuario.senha' class="form-control" type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha">
                             </div>
 
