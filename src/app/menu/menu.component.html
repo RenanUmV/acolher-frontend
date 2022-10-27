@@ -49,9 +49,10 @@
     </div>
 </nav>
 
-<nav *ngIf='logado()' class="navbar navbar-expand-lg navbar-light nav-bar sticky-top">
+<nav *ngIf='logado()' class="navbar navbar-expand-lg navbar-light nav-bar sticky-top" id="barcolor">
     <div class="container-fluid">
-        <a class="font-weight-bold text-white fs-20">ACOLHER</a>
+        <a id="id-logo" routerLink='/feed'>ACOLHER</a>
+        <a class="ml-5" id="spanmini">Acolhendo vidas, transformando pessoas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

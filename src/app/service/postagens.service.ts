@@ -23,23 +23,23 @@ export class PostagensService {
     }
   }
   getAllPostagens(): Observable<PostagemModel[]>{
-    return this.http.get<PostagemModel[]>('https://reconect.herokuapp.com/postagens', this.token)
+    return this.http.get<PostagemModel[]>('https://acolher-backend.herokuapp.com/postagens', this.token)
   }
 
   getByIdPostagem(id: number): Observable<PostagemModel>{
-    return this.http.get<PostagemModel>(`https://reconect.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.get<PostagemModel>(`https://acolher-backend.herokuapp.com/postagens/${id}`, this.token)
   }
 
   postPostagem(postagem: PostagemModel):Observable<PostagemModel>{
-    return this.http.post<PostagemModel>('https://reconect.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post<PostagemModel>('https://acolher-backend.herokuapp.com/postagens', postagem, this.token)
   }
 
   putPostagem(postagem: PostagemModel): Observable<PostagemModel>{
-    return this.http.put<PostagemModel>('https://reconect.herokuapp.com/postagens', postagem, this.token)
+    return this.http.put<PostagemModel>('https://acolher-backend.herokuapp.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number){
-    return this.http.delete(`https://reconect.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.delete(`https://acolher-backend.herokuapp.com/postagens/${id}`, this.token)
   }
 
 }

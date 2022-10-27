@@ -25,15 +25,15 @@ export class AuthService {
   }
 
   logar(userLogin: UserLoginDTO): Observable<UserLoginDTO>{
-    return this.http.post<UserLoginDTO>('https://reconect.herokuapp.com/usuarios/logar', userLogin)
+    return this.http.post<UserLoginDTO>('https://acolher-backend.herokuapp.com/usuarios/logar', userLogin)
   }
 
   cadastrar(usuario: UsuarioModel):Observable<UsuarioModel>{
-    return this.http.post<UsuarioModel>('https://reconect.herokuapp.com/usuarios/cadastrar', usuario)
+    return this.http.post<UsuarioModel>('https://acolher-backend.herokuapp.com/usuarios/cadastrar', usuario)
   }
 
   getByIdUser(id: number):Observable<UsuarioModel>{
-    return this.http.get<UsuarioModel>(`https://reconect.herokuapp.com/usuarios/${id}`, this.token)
+    return this.http.get<UsuarioModel>(`https://acolher-backend.herokuapp.com/usuarios/${id}`, this.token)
   }
 
   logado(){
@@ -58,7 +58,7 @@ export class AuthService {
 
   atualizar(usuario: UsuarioModel): Observable<UsuarioModel> {
 
-    return this.http.put<UsuarioModel>('https://reconect.herokuapp.com/usuarios/atualizar', usuario, this.token);
+    return this.http.put<UsuarioModel>('https://acolher-backend.herokuapp.com/usuarios/atualizar', usuario, this.token);
 
   }
   
