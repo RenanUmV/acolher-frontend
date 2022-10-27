@@ -33,7 +33,7 @@
     
                             <div class="form-group">
                                 <label for="telefone">Telefone <span class="asterisco"> *</span></label>
-                                <input class="form-control" type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                                <input [(ngModel)]='usuario.telefone' class="form-control" type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
                             </div>
 
                             <div class="form-group">
@@ -100,7 +100,7 @@
 
                             <div class="form-group mb-3">
                                 <label for="nome">Estado<span class="asterisco"> *</span></label>
-                                <select class="form-control" name="estado" id="estado">
+                                <select class="form-control" name="estado" id="estado" (change)='userEstado($event)'>
                                     <option value="acre">ACRE</option>
                                     <option value="alagoas">ALAGOAS</option>
                                     <option value="amapa">AMAPÁ</option>
@@ -136,6 +136,11 @@
                                 <input [(ngModel)]='usuario.senha' class="form-control" type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha">
                             </div>
 
+                            <div class="form-group">
+                                <label for="foto">Link da foto</label>
+                                <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Insira o link da foto que deseja utilizar">
+                            </div>
+
                             <div class="form-group mt-3">
                                 <label for="apoioPolitico">Faz parte ou tem ligação com algum partido político?<span class="asterisco"> *</span></label>
                                 <div>
@@ -148,8 +153,8 @@
 
                             <div  class="form-group mb-4">
                                 <label for="acolher">A ONG possui alguma certificação ou prêmio<span class="asterisco"> *</span></label>
-                                <label class="mr-5 ml-2" for="sim">Sim <input class="ml-3 test" type="radio" id="doando" name="opt4" value="1"></label>
-                                <label class="mr-5 ml-2" for="nao">Não <input class="test" type="radio" id="voluntario" name="opt4" value="0"></label>
+                                <label class="mr-5" for="sim"><input class="ml-3 test" type="radio" id="doando" name="opt4" value="1"> Sim</label>
+                                <label class="ml-5" for="nao">Não <input class="test" type="radio" id="voluntario" name="opt4" value="0"></label>
                             </div>
 
                             <button class="btn botao btn-lg botao mt-5" type="submit" (click)='cadastrar()'>Cadastrar</button>

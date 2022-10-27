@@ -13,7 +13,7 @@ export class CadastroAcolhedorComponent implements OnInit {
 
   usuario: UsuarioModel = new UsuarioModel
   confirmarSenha: string
-  tipoUsuario: string
+  estado: string
 
   constructor(
     private authService: AuthService,
@@ -29,12 +29,12 @@ export class CadastroAcolhedorComponent implements OnInit {
     this.confirmarSenha = event.target.value
   }
 
-  tipoUser(event: any){
-    this.tipoUsuario = event.target.value
+  userEstado(event: any){
+    this.estado = event.target.value
   }
 
   cadastrar(){
-    this.usuario.tipo = this.tipoUsuario
+    this.usuario.tipo = "Acolhedor"
 
     if(this.usuario.senha != this.confirmarSenha){
 
