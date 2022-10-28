@@ -18,7 +18,7 @@
                     <div class="input-group">
                         <input class="form-control py-2" type="search" value="Pesquisar" id="example-search-input">
                         <span class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">
+                            <button class="btn search" type="button">
                                 <i class="fa fa-search"></i>
                             </button>
                         </span>
@@ -26,9 +26,9 @@
                 </li>
                 <li class="nav-item ml-2">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-secondary dropdown-toggle bdr" data-toggle="dropdown"
+                        <button type="button" class="btn dropdown-toggle bdr " data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined btn-center">
                                 menu
                             </span>
                         </button>
@@ -49,9 +49,10 @@
     </div>
 </nav>
 
-<nav *ngIf='logado()' class="navbar navbar-expand-lg navbar-light nav-bar sticky-top">
+<nav *ngIf='logado()' class="navbar navbar-expand-lg navbar-light nav-bar sticky-top" id="barcolor">
     <div class="container-fluid">
-        <a class="font-weight-bold text-white fs-20">RECONECT</a>
+        <a id="id-logo" routerLink='/feed'>ACOLHER</a>
+        <a class="ml-5" id="spanmini">Acolhendo vidas, transformando pessoas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

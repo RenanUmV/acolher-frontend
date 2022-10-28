@@ -25,23 +25,23 @@ export class TemaService {
   }
 
   getAllTema(): Observable<TemaModel[]>{
-    return this.http.get<TemaModel[]>('https://reconect.herokuapp.com/temas', this.token)
+    return this.http.get<TemaModel[]>('https://acolher-backend.herokuapp.com/temas', this.token)
   }
 
   getByIdTema(id: number): Observable<TemaModel>{
-    return this.http.get<TemaModel>(`https://reconect.herokuapp.com/temas/${id}`, this.token)
+    return this.http.get<TemaModel>(`https://acolher-backend.herokuapp.com/temas/${id}`, this.token)
   }
 
   postTema(tema: TemaModel):Observable<TemaModel>{
-    return this.http.post<TemaModel>('https://reconect.herokuapp.com/temas', tema, this.token)
+    return this.http.post<TemaModel>('https://acolher-backend.herokuapp.com/temas', tema, this.token)
   }
 
   putTema(tema: TemaModel): Observable<TemaModel>{
-    return this.http.put<TemaModel>('https://reconect.herokuapp.com/temas', tema, this.token)
+    return this.http.put<TemaModel>('https://acolher-backend.herokuapp.com/temas', tema, this.token)
   }
 
   deleteTema(id: number){
-    return this.http.delete(`https://reconect.herokuapp.com/temas/${id}`, this.token)
+    return this.http.delete(`https://acolher-backend.herokuapp.com/temas/${id}`, this.token)
   }
 
 }
