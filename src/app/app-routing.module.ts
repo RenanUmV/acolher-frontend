@@ -11,6 +11,7 @@ import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { FeedComponent } from './feed/feed.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
+import { OngsComponent } from './ongs/ongs.component';
 import { PerfilUserComponent } from './perfil-user/perfil-user.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { TemaComponent } from './tema/tema.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'cadastro-acolhedor',component: CadastroAcolhedorComponent},
   
   {path:'cadastro-acolhido',component: CadastroAcolhidoComponent},
+  {path:'ongs',component: OngsComponent},
   
   {path:'login', component: LoginComponent},
   {path:'cadastro', component: CadastroComponent},

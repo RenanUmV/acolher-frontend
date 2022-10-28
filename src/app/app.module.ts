@@ -26,6 +26,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { CadastroAcolhedorComponent } from './cadastro-acolhedor/cadastro-acolhedor.component';
 import { CadastroAcolhidoComponent } from './cadastro-acolhido/cadastro-acolhido.component';
+import { OngsComponent } from './ongs/ongs.component';
 
 
 
@@ -52,6 +53,7 @@ import { CadastroAcolhidoComponent } from './cadastro-acolhido/cadastro-acolhido
     PerfilUserComponent,
     AlertasComponent,
     CadastroAcolhidoComponent,
+    OngsComponent,
     
   ],
   imports: [
