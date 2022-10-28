@@ -4,10 +4,10 @@
   <!-- Topo -->
 
   <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid bg-jb row" id="quemSomos">
+  <div class="bg-jb row" id="quemSomos">
     <div>
       <div class="row">
-        <div class="col-md-12 d-flex justify-content-center flex-wrap">
+        <div class="col-md-12 d-flex justify-content-center flex-wrap mt-5">
           <carousel [images]="images">
           </carousel>
         </div>
@@ -17,19 +17,19 @@
       </div>
     </div>
     <div class="container col-md-7" id="main-container">
-      <h1 class="display-4 text-white">SOBRE O ACOLHER</h1>
-      <h3 class="display-6 text-white">Acolhendo vidas, transformando pessoas</h3>
-      <p class="lead text-left">
-        A invisibilidade tira oportunidades. Pensansando nisso, o ACOLHER nasceu da cabeça de 12 jovens engajados
-        e preocupados com as causas sociais. Nosso intuito é fazer você ser visto e acolhido, para que assim a sua vida
-        seja transformada.
+      <h1 class="text-white" style="font-weight: bolder;">SOBRE <img class="icon-lamp" src="https://i.imgur.com/Iu0yGMQ.png" alt=""></h1>
+      <h1 class="display-4 text-white" style="font-weight: bold;">O ACOLHER</h1>
+      <h3 class="display-6 text-white mb-5">Acolhendo vidas, transformando pessoas</h3>
+      <p class="lead text-left text-white mt-3 mb-5">
+        A invisibilidade tira oportunidades. Pensando nisso, o ACOLHER nasceu da cabeça de 11 jovens engajados e 
+        preocupados com as causas sociais. Nosso intuito é fazer você ser visto e acolhido, para que assim a sua vida seja transformada.
       </p>
-      <p class="lead text-justify text-uppercase">
+      <p class="lead text-justify text-uppercase text-white mt-5" style="font-size: 30px; font-weight: bold;">
         venha fazer parte do acolher, acolha vidas transforme pessoas.
       </p>
     </div>
     <div class="col-md-4">
-      <img src="https://i.imgur.com/cZrfYjB.png" class='img-cf'>
+      <img src="https://i.imgur.com/u4wY3Gf.png" class='img-cf imagem-direita'>
       <div class="d-flex justify-content-center">
         <div class="row">
           <div class="col-xs-6 mr-4">
@@ -48,251 +48,150 @@
   <!-- /Jumbotron -->
 
   <!-- Quem acolhemos -->
-  <div class="container" id="quemAcolhemos">
-    <div class="row mb-5">
-      <div></div>
-    </div>
-    <div class="row d-flex justify-content-center pt-4 mb-5">
-      <h1>QUEM ACOLHEMOS</h1>
-    </div>
-    <div class="row d-flex justify-content-between align-items-center">
-      <div class="col-md-3 d-flex flex-column ">
-        <div>
-          <div class="d-flex justify-content-center">
-            <h2><u>NOVO JEITO</u></h2>
-          </div>
-          <p class='text-justify'>
-            O usuário tem como papel doar, consertar e/ou vender,a baixo custo de mercado, computadores, notebooks,
-            tablets, celulares, entre outros equipamentos.
-            Além disso, tem por objetivo fornecer uma ampliação de serviços de internet para áreas remotas e
-            marginalizadas pelo poder público, bem como oferecer cursos capacitantes e de letramento digital.
-          </p>
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro'>SEJA UM
-              ACOLHEDOR</button>
-          </div>
-        </div>
-        <div class='mt-3'>
-          <img src="../../assets/img/Puzzle_heart.png" class='img-cf'>
-        </div>
+  <div class="bg-bj">
+    <div class="container" id="quemAcolhemos">
+      <div class="row mb-5">
+        <div></div>
       </div>
-      <div class="col-md-6 d-flex flex-column ">
-        <div>
-          <img src="../../assets/img/donation.jpg" class='img-cf'>
-        </div>
-        <div class='mt-3'>
-          <div class="d-flex justify-content-center">
-            <h2><u>TRANSFORMA RECIFE</u></h2>
-          </div>
-          <p class='text-justify'>
-            Esse tipo de usuário é destinado para pessoas que não possuem condições financeiras para comprar um
-            equipamento para estudar, assistir a aulas on-line e que precisam se capacitar para o mercado de trabalho.
-            É necessário cadastrar-se para receber os serviços oferecidos pelo colaborador. Para lideranças que desejem
-            levar essa transformação para sua comunidade, é só entrar em contato conosco para ficarem responsáveis por
-            conectar pessoas que ainda não possuem
-          </p>
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
-              ACOLHEDOR</button>
-          </div>
-
-        </div>
+      <div class="row d-flex justify-content-center pt-4 mb-5">
+        <h1 class="texto-vermelho">QUEM ACOLHEMOS</h1>
       </div>
-      <div class="col-md-3 d-flex flex-column ">
-        <div>
-          <div class="d-flex justify-content-center">
-            <h2><u>PORTO SOCIAL</u></h2>
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-md-3 d-flex flex-column ">
+          <div>
+            <div class="d-flex justify-content-center">
+              <h2><a class="link"  routerLink='/ongs'>NOVO JEITO</a></h2>
+            </div>
+            <p class='text-justify'>
+              O Novo Jeito tem a vocação de tocar corações, mudar comportamentos, realizar ações solidárias, criar
+              movimentos, para que mais e mais pessoas possam trabalhar, dormir, comer, estudar e ter uma vida mais digna
+              em todos os aspectos.
+            </p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro'>SEJA UM
+                ACOLHEDOR</button>
+            </div>
           </div>
-          <p class='text-justify'>
-            O usuário tem como papel doar, consertar e/ou vender,a baixo custo de mercado, computadores, notebooks,
-            tablets, celulares, entre outros equipamentos.
-            Além disso, tem por objetivo fornecer uma ampliação de serviços de internet para áreas remotas e
-            marginalizadas pelo poder público, bem como oferecer cursos capacitantes e de letramento digital.
-          </p>
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
-              ACOLHEDOR</button>
-          </div>
-        </div>
-        <div class='mt-3'>
-          <img src="../../assets/img/2gether.jpg" class='img-cf'>
-        </div>
-      </div>
-      <div class="col-md-5">
-      </div>
-    </div>
-  </div>
-  <!-- /Quem acolhemos -->
-
-  <!-- Cursos -->
-  <div class="container" id="comoFazemos">
-    <div class="row mb-5">
-      <div></div>
-    </div>
-    <div class="row d-flex justify-content-center pt-4 mb-5">
-      <h1>COMO FAZEMOS</h1>
-    </div>
-    <div class="row d-flex justify-content-between align-items-center">
-      <div class="col-md-5 d-flex flex-column ">
-        <div>
-          <div class="d-flex justify-content-start">
-            <h2><u>ACOLHIDO</u></h2>
-          </div>
-          <p class='text-justify'>
-            O usuário tem como papel doar, consertar e/ou vender,a baixo custo de mercado, computadores, notebooks,
-            tablets, celulares, entre outros equipamentos.
-            Além disso, tem por objetivo fornecer uma ampliação de serviços de internet para áreas remotas e
-            marginalizadas pelo poder público, bem como oferecer cursos capacitantes e de letramento digital.
-          </p>
-          <div class="d-flex justify-content-start">
-            <button type="button" class="btn btn-primary" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
-              ACOLHIDO</button>
+          <div class='mt-3'>
+            <img src="https://i.imgur.com/nXl5BIn.png" class='img-cf img-lateral'>
           </div>
         </div>
-        <div class='mt-3'>
-          <div class="d-flex justify-content-start">
-            <h2><u>ACOLHEDOR</u></h2>
+        <div class="col-md-6 d-flex flex-column ">
+          <div>
+            <img src="https://i.imgur.com/HJpeZPY.png" class='img-cf img-central'>
           </div>
-          <p class='text-justify'>
-            O usuário tem como papel doar, consertar e/ou vender,a baixo custo de mercado, computadores, notebooks,
-            tablets, celulares, entre outros equipamentos.
-            Além disso, tem por objetivo fornecer uma ampliação de serviços de internet para áreas remotas e
-            marginalizadas pelo poder público, bem como oferecer cursos capacitantes e de letramento digital.
-          </p>
-          <div class="d-flex justify-content-start">
-            <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
-              ACOLHEDOR</button>
+          <div class='mt-5'>
+            <div class="d-flex justify-content-center">
+              <h2><a class="link" href="https://www.transformarecife.com.br/#/login/" target="_blank">TRANSFORMA RECIFE</a></h2>
+            </div>
+            <p class='text-justify'>
+              Transforma Recife é uma plataforma que conecta Organizações e Voluntários na construção de uma cidade mais
+              solidária.
+            </p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
+                ACOLHEDOR</button>
+            </div>
+  
           </div>
         </div>
-      </div>
-
-
-
-      <div class="col-md-7 d-flex flex-column ">
-        <div class='mt-3'>
-          <img src="../../assets/img/typing.jpg" class='img-cf'>
+        <div class="col-md-3 d-flex flex-column ">
+          <div>
+            <div class="d-flex justify-content-center">
+              <h2 class="link"><a class="link" href="https://www.portosocial.com.br/" target="_blank">PORTO SOCIAL</a></h2>
+            </div>
+            <p class='text-justify'>
+              Acreditamos na importância de movimentar e capacitar a sociedade civil na promoção de soluções para
+              problemas sociais. Somos movidos por ajudar as pessoas a encontrarem seus propósitos, potencializar o
+              impacto social e fazer parte de histórias de transformação.
+            </p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
+                ACOLHEDOR</button>
+            </div>
+          </div>
+          <div class='mt-3'>
+            <img src="https://i.imgur.com/T5fesXH.png" class='img-cf img-lateral'>
+          </div>
         </div>
         <div class="col-md-5">
         </div>
       </div>
-
     </div>
-    <!-- Cursos -->
-    <hr>
-    <!-- Novo jeito -->
+  </div>
+ 
+  <!-- /COMO FAZEMOS -->
+  <div class="bg-jb">
     <div class="container" id="comoFazemos">
       <div class="row mb-5">
         <div></div>
       </div>
-      <div class="row d-flex justify-content-center pt-4 mb-3">
-        <h1>ONGS</h1>
+
+      <div class="row d-flex justify-content-center pt-4">
+        <h1 class="texto-vermelho">COMO FAZEMOS</h1>
       </div>
+
       <div class="row d-flex justify-content-between align-items-center">
-
-        <div class="row">
-          <div class="col-md-7 d-flex flex-column">
-            <div>
-              <hr>
-              <div class="d-flex justify-content-start">
-                <h2>NOVO JEITO</h2>
-              </div>
-              <hr>
-              <p class='text-justify'>
-                O novo Jeito tem a vocação de tocar corações,
-                mudar comportamentos realizar ações solidárias,
-                criar movimentos, para que mais e mais pessoas
-                possam trabalhar, dormir, comer, estudar e ter
-                uma vida mais digna em todos aspectos.
-              </p>
-              <div class="d-flex justify-content-start">
-                <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA
-                  UM
-                  ACOLHEDOR</button>
-              </div>
+        <div class="col-md-5 d-flex flex-column ">
+          <div>
+            <div class="d-flex justify-content-start">
+              <h2><u class="link">ACOLHIDO</u></h2>
+            </div>
+            <p class='text-justify'>
+              Os ACOLHIDOS são organizações sem fins lucrativos, constituídas formalmente e autonomamente, caracterizadas
+              por ações de solidariedade no campo das políticas públicas e pelo legítimo exercício de pressões políticas
+              em proveito de populações excluídas das condições da cidadania.
+            </p>
+            <div class="d-flex justify-content-start">
+              <button type="button" class="btn btn-primary" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
+                ACOLHIDO</button>
             </div>
           </div>
-          <div class="col-md-5 d-flex flex-column">
-            <img src="../../assets/img/NOVOJEITO.png" class='img-cf'>
-          </div>
-          <div class="w-100"></div>
-          <div class="col-md-12 mt-3 d-flex flex-column">
-            <div>
-              <hr>
-              <div class="d-flex justify-content-start">
-                <h2>NOSSOS PROJETOS</h2>
-              </div>
-              <hr>
-
-              <div class="row">
-                <div class="row">
-
-                  <div class="col-sm-3">
-                    <div class="card">
-                      <img class="card-img-top"
-                        src="../../assets/img/close-up-on-volunteer-oganizing-stuff-for-donation.jpg"
-                        alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text text-primary">MAIS CIDADANIA</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-3">
-                    <div class="card">
-                      <img class="card-img-top"
-                        src="../../assets/img/pao-frances-qual-sua-origem-de-onde-vem-esse-nome-e-como-fazer-3.jpg"
-                        alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text text-primary">MAIS PÃO</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-3">
-                    <div class="card">
-                      <img class="card-img-top" src="../../assets/img/close-up-volunteer-oganizing-stuff-donation.jpg"
-                        alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text text-primary">NOVO JEITO AMBIENTAL</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title text-primary">DOAÇÕES DIRETAS</h5>
-                        <p class="card-text"><strong>ASSOCIAÇÃO NOVO JEITO</strong></p>
-                        <p class="card-text">CNPJ: 16.843.830/0001-10</p>
-                        <p class="card-text">Santander (033)</p>
-                        <p class="card-text">Ag: 4048</p>
-                        <p class="card-text">CC: 13001110-7</p>
-                        <div class="d-flex justify-content-center">
-                          <button type="button" class="btn btn-danger" id="bttn-register">SAIBA MAIS</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+          <div class='mt-3'>
+            <div class="d-flex justify-content-start">
+              <h2><u class="link">ACOLHEDOR</u></h2>
+            </div>
+            <p class='text-justify'>
+              ACOLHEDOR é o cidadão que, motivado pelos valores de participação e solidariedade, doa seu tempo, trabalho e
+              talento, de maneira espontânea e não remunerada, para causas de interesse social e comunitário.
+            </p>
+            <div class="d-flex justify-content-start">
+              <button type="button" class="btn btn-danger" id="bttn-register" routerLink='/cadastro-acolhedor'>SEJA UM
+                ACOLHEDOR</button>
             </div>
           </div>
         </div>
-
-        <div class="col-md-5">
+  
+  
+  
+        <div class="col-md-7 d-flex flex-column ">
+          <div class='mt-3'>
+            <img src="https://i.imgur.com/Ltgg96W.png" class='img-cf'>
+          </div>
+          <div class="col-md-5">
+          </div>
         </div>
-
+  
       </div>
-      <!-- Novo Jeito -->
+    </div>
 
-      <!-- Acompanhe Atividades -->
-      <div class="container" id="nossasAtividades">
-        <div class="row mb-5">
-          <div></div>
-        </div>
+  </div>
+  <!-- /COMO FAZEMOS -->
+
+  <!-- Acompanhe Atividades -->
+  <div class="bg-bj">
+    <div class="row mb-5">
+      <div></div>
+    </div>
+
+    <div class="container" id="nossasAtividades">
+      <div class="row mb-5">
+        <div></div>
+      </div>
+
+      <div>
         <div class="row d-flex justify-content-center pt-4 mb-5">
-          <h1 class="text-danger">ACOMPANHE NOSSAS ATIVIDADES</h1>
+          <h1 class="texto-vermelho">ACOMPANHE NOSSAS ATIVIDADES</h1>
         </div>
         <div class="row d-flex justify-content-between">
           <div class="col-md-3 d-flex flex-column ">
@@ -353,164 +252,345 @@
           <div class="col-md-3 d-flex flex-column ">
             <div>
               <div class='mt-3'>
-                <img src="../../assets/img/calendario.jpg" class='img-cf'>
+                <img src="https://i.imgur.com/uojdh9u.png" class='img-calend'>
               </div>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary" id="bttn-register">CALENDÁRIO DE AÇÕES</button>
+              <div class="d-flex justify-content-center ml-5 mt-4">
+                <button type="button" class="btn bgc text-white" id="bttn-register">CALENDÁRIO DE AÇÕES</button>
               </div>
               <div class="d-flex justify-content-center mt-5">
-                <button type="button" class="btn btn-warning" id="bttn-register">PONTOS DE ARRECADAÇÃO</button>
+                <h6 style="color: rgb(17, 87, 139);">PONTOS DE ARRECADAÇÃO</h6>
+              </div>
+              <div class="ml-4">
+                <p>Rua Marques Amorim, 365 B
+                  Ilha do Leite, Recife/PE
+                  CEP 50070-330</p>
+                <p>
+                  Rua Mauricéia, 401
+                  Iputnga, Recife/PE
+                  CEP 50670-480
+                </p>
               </div>
             </div>
             <div class="col-md-5">
             </div>
           </div>
         </div>
-        <!-- /Acompanhe Atividades -->
-
-         <!-- Equipe -->
-  <section id="team">
-    <div class="container" id="equipe">
-      <div class="row mb-5">
-        <div></div>
       </div>
 
-      <div class="row d-flex justify-content-center pt-4">
-        <h2>Equipe</h2>
-      </div>
-
-      <div class="row d-flex justify-content-around flex-wrap text-center">
-
-            <div class="card-team">
-              <div class="card cardAl">
-                <div class="card-body">
-                  <img src="https://avatars.githubusercontent.com/u/85349942?v=4" alt="Foto do desenvolvedor Ályson Campos" class="img-fluid rounded-circle w-50 mb-3">
-                  <h3>Ályson Campos</h3>
-
-                  <div class="d-flex flex-row justify-content-center">
-                    <div class="p-4">
-                      <a href="https://github.com/alysoncampos" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                    </div>
-
-                    <div class="p-4">
-                      <a href="https://www.linkedin.com/in/alysonbscampos/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-
-                </div>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="card-team">
-              <div class="card cardBru">
-                <div class="card-body">
-                  <img src="https://avatars.githubusercontent.com/u/90732629?s=400&u=9c138b25425e503af4c68805ef8e5ef6d32b3196&v=4" alt="Foto da desenvolvedora Bruna Guimarães" class="img-fluid rounded-circle w-50 mb-3">
-                  <h3>Bruna Guimarães</h3>
-                  <div class="d-flex flex-row justify-content-center">
-                    <div class="p-4">
-                      <a href="https://github.com/Brunaguimaraesb" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                    </div>
-
-                    <div class="p-4">
-                      <a href="https://www.linkedin.com/in/brunaguimaraesb/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-team">
-              <div class="card cardMat">
-                <div class="card-body">
-                  <img src="https://avatars.githubusercontent.com/u/82422789?s=400&u=ed98c089ff2734b88a2be2f41245d9bf0f128788&v=4" alt="Foto do desenvolvedor Matheus Amâncio" class="img-fluid rounded-circle w-50 mb-3">
-                  <h3>Matheus Amâncio</h3>
-                  <div class="d-flex flex-row justify-content-center">
-
-                    <div class="p-4">
-                      <a href="https://github.com/amanncio" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                    </div>
-
-                    <div class="p-4">
-                      <a href="https://www.linkedin.com/in/matheus-am%C3%A2ncio-746b6920b/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-team">
-              <div class="card cardRen">
-                <div class="card-body">
-                  <img src="https://avatars.githubusercontent.com/u/64814287?v=4" alt="Foto do desenvolvedor Renan Vasconcelos" class="img-fluid rounded-circle w-50 mb-3">
-                  <h3>Renan Vasconcelos</h3>
-                  <div class="d-flex flex-row justify-content-center">
-
-                    <div class="p-4">
-                      <a href="https://github.com/RenanUmV" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                    </div>
-
-                    <div class="p-4">
-                      <a href="https://www.linkedin.com/in/renan-vasconcelos-193a45140/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-team">
-              <div class="card cardSyl">
-                <div class="card-body">
-                  <img src="https://avatars.githubusercontent.com/u/91259960?v=4" alt="Foto da desenvolvedora Sylvia Monteiro" class="img-fluid rounded-circle w-50 mb-3">
-                  <h3>Sylvia Monteiro</h3>
-                  <div class="d-flex flex-row justify-content-center">
-
-                    <div class="p-4">
-                      <a href="https://github.com/sylviamonteiro" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                    </div>
-
-                    <div class="p-4">
-                      <a href="https://www.linkedin.com/in/sylviamonteirodemoraes/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-      </div>
     </div>
-  </section>
-  <!-- /Equipe -->
+
+  </div>
+  <!-- /Acompanhe Atividades -->
+
+<!-- Equipe -->
+  <div class="bg-jb">
+    <div class="row mb-5">
+      <div></div>
+    </div>
+      <div class="container" id="nossasAtividades">
+        <div class="row mb-5">
+          <div></div>
+        </div>
+        <section id="team">
+          <div class="container" id="equipe">
+            <div class="row mb-5">
+              <div></div>
+            </div>
+
+            <div class="row d-flex justify-content-center pt-4 mb-3">
+              <h1 class="texto-vermelho">EQUIPE</h1>
+            </div>
+
+            <div class="row d-flex justify-content-around flex-wrap text-center">
+
+              <div class="card-team">
+                <div class="card cardAl">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/115597967?v=4"
+                      alt="Foto do desenvolvedor Andrew Pereira" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Andrew Pereira</h3>
+
+                    <div class="d-flex flex-row justify-content-center">
+                      <div class="p-4">
+                        <a href="https://github.com/Andrewluiz" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="https://www.linkedin.com/in/andrew-luis-425064255" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardBru">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/91504506?v=4"
+                      alt="Foto da desenvolvedor João Almeida" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>João Almeida</h3>
+                    <div class="d-flex flex-row justify-content-center">
+                      <div class="p-4">
+                        <a href="https://github.com/victoralmeida4521" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-almeida-louren%C3%A7o-020180218/"
+                          target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardMat">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/114495202?v=4"
+                      alt="Foto do desenvolvedor Jobson Silva" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Jobson <br> Silva</h3>
+                    <div class="d-flex flex-row justify-content-center">
+
+                      <div class="p-4">
+                        <a href="https://github.com/amanncio" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="https://www.linkedin.com/in/jobson-joaquim-01878b247/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardRen">
+                  <div class="card-body">
+                    <img
+                      src="https://avatars.githubusercontent.com/u/57011909?s=400&u=93dc6585e7bfe9e3e11e00fe641ccd826ee4df47&v=4"
+                      alt="Foto do desenvolvedora Leyla Andrade" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Leyla Andrade</h3>
+                    <div class="d-flex flex-row justify-content-center">
+
+                      <div class="p-4">
+                        <a href="https://github.com/leyla-andrade" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="https://www.linkedin.com/in/leyla-andrade-a43bba195/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardSyl">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/114268190?v=4"
+                      alt="Foto da desenvolvedor Lucas Tadeu" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Lucas <br> Tadeu</h3>
+                    <div class="d-flex flex-row justify-content-center">
+
+                      <div class="p-4">
+                        <a href="https://github.com/lucastadeuh" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="www.linkedin.com/in/lucastadeuh/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-around flex-wrap text-center">
+
+              <div class="card-team">
+                <div class="card cardAl">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/85349942?v=4"
+                      alt="Foto do desenvolvedor Manoel Horácio" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Manoel Horácio</h3>
+
+                    <div class="d-flex flex-row justify-content-center">
+                      <div class="p-4">
+                        <a href="https://github.com/alysoncampos" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="https://www.linkedin.com/in/alysonbscampos/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardBru">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/114450353?v=4"
+                      alt="Foto da desenvolvedor Paulo Henrique" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Paulo Henrique</h3>
+                    <div class="d-flex flex-row justify-content-center">
+                      <div class="p-4">
+                        <a href="https://github.com/paulolimagomes" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="http://www.linkedin.com/in/paulo-henrique-noberto-0395a1206/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardMat">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/64814287?v=4"
+                      alt="Foto do desenvolvedor Renan Vasconcelos" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Renan Vasconcelos</h3>
+                    <div class="d-flex flex-row justify-content-center">
+
+                      <div class="p-4">
+                        <a href="https://github.com/RenanUmV" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="https://www.linkedin.com/in/renan-vasconcelos-193a45140/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardRen">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/116835636?v=4"
+                      alt="Foto do desenvolvedor Silas Vitor" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Silas <br> Vitor</h3>
+                    <div class="d-flex flex-row justify-content-center">
+
+                      <div class="p-4">
+                        <a href="https://github.com/Shylaz" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href=" https://www.linkedin.com/in/silas-vitor-xavier-b15308224/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-team">
+                <div class="card cardSyl">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/92613613?v=4"
+                      alt="Foto da desenvolvedor Victor Souza" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Victor <br> Souza</h3>
+                    <div class="d-flex flex-row justify-content-center">
+
+                      <div class="p-4">
+                        <a href="https://github.com/ruanuo" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="www.linkedin.com/in/ruanuo/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-team card-mb">
+                <div class="card cardMat">
+                  <div class="card-body">
+                    <img src="https://avatars.githubusercontent.com/u/79805351?v=4"
+                      alt="Foto da desenvolvedor Walmir Pereira" class="img-fluid rounded-circle w-50 mb-3">
+                    <h3>Walmir Pereira </h3>
+                    <div class="d-flex flex-row justify-content-center">
+
+                      <div class="p-4">
+                        <a href="https://github.com/walliots" target="_blank">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                      <div class="p-4">
+                        <a href="https://www.linkedin.com/in/walmir-pereira-de-lima-68733720b/" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Equipe -->
 
 
         <div class="row mb-5">
           <div></div>
         </div>
-        <div class="row mb-5">
+        <div class="row">
           <div></div>
         </div>
 
-      </div>
+  </div>

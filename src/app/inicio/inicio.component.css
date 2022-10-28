@@ -55,6 +55,15 @@ h3 {
 
 .bg-jb {
     background-color: #d6f3f9;
+    background-color: #58b8bf;
+    background-image: linear-gradient(0deg, #58b8bf 0%, #f9ffff 100%);
+
+}
+
+.bg-bj {
+    background-color: #d6f3f9;
+    background-color: #58b8bf;
+    background-image: linear-gradient(0deg, #f9ffff 0%,  #58b8bf 100%);
 }
 
 .bg-cc {
@@ -207,10 +216,39 @@ ul.social-network li {
 
 
 .bgc {
-    background-color: #403bacac;
+    background-color: rgb(17, 87, 139);
 }
 
+.link{
+    color: rgb(17, 87, 139);
+}
 
+.img-central{
+    height: 300px;
+}
+
+.img-lateral{
+    border: 3px solid #000;
+}
+
+.texto-vermelho{
+    color: rgb(255, 79, 99);
+}
+
+.img-calend{
+    height: 200px;
+}
+
+.icon-lamp{
+    width: 45px;
+    height: 45px;
+    color: aliceblue;
+}
+
+.imagem-direita{
+    width: 500px;
+    height: 500px;
+}
 
 ::ng-deep .carousel-cells .carousel-cell {
     width: 100%;
@@ -218,6 +256,9 @@ ul.social-network li {
     position: absolute;
     overflow: hidden;
     border-radius: 97px;
-    border: 4px solid rgba(80, 170, 62, 0.758);
-    
+    border: 4px solid rgba(80, 170, 62, 0.758);   
+}
+
+.card-mb{
+    margin-bottom: 200px;
 }

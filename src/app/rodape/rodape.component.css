@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 .bg-f {
-    background-color: white
+    background-color: #d6f3f9;
+    background-color: #58b8bf;
+    background-image: linear-gradient(0deg, #f9ffff 0%,  #58b8bf 100%);
 }
 
 .fa {
@@ -23,7 +25,7 @@
     height: 465px;
 }
 #container-float-bl{
-    background-color: #5054cab9;
+    background-color: rgb(21, 102, 154);
     border-radius: 20px;
     height: 465px;
 }
@@ -32,4 +34,50 @@
     font-size: 30px;
     position: relative;
     color: white !important;
+}
+
+
+.bg-jb {
+    background-color: #d6f3f9;
+    background-color: #58b8bf;
+    background-image: linear-gradient(0deg, #58b8bf 0%, #f9ffff 100%);
+
+}
+
+.bg-bj {
+    background-color: #d6f3f9;
+    background-color: #58b8bf;
+    background-image: linear-gradient(0deg, #f9ffff 0%,  #58b8bf 100%);
+}
+
+
+.btn-enviar{
+    border-radius: 24px;
+    background-color: rgb(17, 87, 139);
+}
+
+.img-cf {
+    margin-top: -70px;
+    width: 14rem;
+    object-fit: contain;
+}
+
+.infos2{
+    font-size: 18px;
+    font-family: 'Rawles';
+    font-weight: bold;
+}
+
+.infos{
+    font-size: 15px;
+    font-family:'Poppins';
+    font-weight: bold;
+}
+
+.img-mt{
+    margin-top: 4px;
+}
+
+.modal-z{
+    z-index: 10002px;
 }

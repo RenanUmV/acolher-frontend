@@ -13,7 +13,7 @@
 }
 
 span{
-    color: #0072b1;
+    color: rgb(255, 79, 99);
 }
 
 .btn{
@@ -32,4 +32,13 @@ span{
     min-width: 10rem;
     margin-right: 3rem;
     margin-top: 1.750rem;
+}
+
+.azul{
+    color: #0072b1;
+}
+
+.form-control{
+    color: aliceblue;
+    background-color: rgb(246, 172, 181);
 }

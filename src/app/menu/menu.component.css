@@ -36,7 +36,7 @@
 }
 
 #barcolor {
-    z-index: 500;
+    z-index: 10001;
     background: rgb(124, 157, 212);
     background: linear-gradient(90deg, rgba(124, 157, 212, 0.9476832969515931) 1%, rgba(50, 102, 190, 0.9756945014333859) 17%, rgba(198, 100, 143, 1) 52%, rgba(222, 19, 41, 0.9140698515734419) 83%);
 }
@@ -119,4 +119,8 @@
 
 .btn-center{
     transform: translateX(-4.5px);
+}
+
+.bar-ml{
+    margin-left: 110px;
 }
